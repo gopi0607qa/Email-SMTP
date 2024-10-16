@@ -47,7 +47,7 @@ public class Emailattachment {
 					@Override
 					protected PasswordAuthentication getPasswordAuthentication() {
 
-						return new PasswordAuthentication("gopiqa0607@gmail.com", "kaozezjpcjoejugr");
+						return new PasswordAuthentication("Email Adress", "Password");
 
 					}
 
@@ -59,10 +59,10 @@ public class Emailattachment {
 			Message message = new MimeMessage(session);
 
 			// Set the from address
-			message.setFrom(new InternetAddress("gopiqa0607@gmail.com"));
+			message.setFrom(new InternetAddress("Sender Email Address"));
 
 			// Set the recipient address
-			message.setRecipients(Message.RecipientType.TO, InternetAddress.parse("gopinath@datanetiix.com"));
+			message.setRecipients(Message.RecipientType.TO, InternetAddress.parse("Receiver Email Addresss"));
 
 			// Add the subject link
 			message.setSubject("Testing Subject");
