@@ -13,12 +13,12 @@ public class EmailPractice {
 		Email email = new SimpleEmail();
 		email.setHostName("smtp.gmail.com");
 		email.setSmtpPort(465);
-		email.setAuthenticator(new DefaultAuthenticator("gopiqa0607@gmail.com", "kaozezjpcjoejugr"));
+		email.setAuthenticator(new DefaultAuthenticator("Email Address", "Password"));
 		email.setSSLOnConnect(true);
 		email.setFrom("gopi@gmail.com");
 		email.setSubject("TestMail");
 		email.setMsg("This is a test mail ... :-)");
-		email.addTo("gopinath@datanetiix.com");
+		email.addTo("Receiver Email Address");
 		email.send();
 		System.out.println("Email send succesfully..");
 
